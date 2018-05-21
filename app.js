@@ -17,8 +17,8 @@ app.get("/about", function(req, res){
 });
 
 
+var PORT = process.env.PORT || 3000;
 
-
-app.listen(3000, function(){
-    console.log("server is running on 3000");
+app.listen(PORT, function(){
+    console.log(`server is running on ${PORT}`);
 });
